@@ -31,6 +31,22 @@ public class automacao {
         WebElement createAccount = driver.findElement(By.id("createAccountSubmit"));
 
         createAccount.click();
+        
+        WebElement name = driver.findElement(By.id("ap_customer_name"));
+
+        name.sendKeys("Tester Name");
+        
+        WebElement email = driver.findElement(By.id("ap_email"));
+
+        email.sendKeys("vsevokryggovno@isueir.com");
+        
+        WebElement password = driver.findElement(By.id("ap_password"));
+
+        password.sendKeys("Tester1234!");
+        
+        WebElement checkPassword = driver.findElement(By.id("ap_password_check"));
+
+        checkPassword.sendKeys("Tester1234!");
 
         System.out.println("Page title is: " + driver.getTitle());
 
