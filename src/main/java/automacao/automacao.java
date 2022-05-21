@@ -34,22 +34,26 @@ public class automacao {
         
         WebElement name = driver.findElement(By.id("ap_customer_name"));
 
-        name.sendKeys("Tester Name");
+        name.sendKeys("Carlos Ferreira");
         
         WebElement email = driver.findElement(By.id("ap_email"));
 
-        email.sendKeys("vsevokryggovno@isueir.com");
+        email.sendKeys("reddudisbr@outlook.com");
         
         WebElement password = driver.findElement(By.id("ap_password"));
 
-        password.sendKeys("Tester1234!");
+        password.sendKeys("CachorroGosto!!");
         
         WebElement checkPassword = driver.findElement(By.id("ap_password_check"));
 
-        checkPassword.sendKeys("Tester1234!");
+        checkPassword.sendKeys("CachorroGosto!!");
+        
+        WebElement continueCreateAccount1 = driver.findElement(By.id("continue"));
+        
+        continueCreateAccount1.click();
 
         System.out.println("Page title is: " + driver.getTitle());
 
-		 driver.quit();
+		 //driver.quit();
     }
 }
