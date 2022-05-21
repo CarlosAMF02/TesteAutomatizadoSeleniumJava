@@ -23,6 +23,10 @@ public class automacao {
         element.sendKeys("Livro George Orwel");
         
         element.submit();
+        
+        WebElement account = driver.findElement(By.id("nav-link-accountList"));
+
+        account.click();
 
         System.out.println("Page title is: " + driver.getTitle());
 
