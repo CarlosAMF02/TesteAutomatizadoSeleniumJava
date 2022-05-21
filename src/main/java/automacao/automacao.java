@@ -23,9 +23,37 @@ public class automacao {
         element.sendKeys("Livro George Orwel");
         
         element.submit();
+        
+        WebElement account = driver.findElement(By.id("nav-link-accountList"));
+
+        account.click();
+        
+        WebElement createAccount = driver.findElement(By.id("createAccountSubmit"));
+
+        createAccount.click();
+        
+        WebElement name = driver.findElement(By.id("ap_customer_name"));
+
+        name.sendKeys("Carlos Ferreira");
+        
+        WebElement email = driver.findElement(By.id("ap_email"));
+
+        email.sendKeys("reddudisbr@outlook.com");
+        
+        WebElement password = driver.findElement(By.id("ap_password"));
+
+        password.sendKeys("CachorroGosto!!");
+        
+        WebElement checkPassword = driver.findElement(By.id("ap_password_check"));
+
+        checkPassword.sendKeys("CachorroGosto!!");
+        
+        WebElement continueCreateAccount1 = driver.findElement(By.id("continue"));
+        
+        continueCreateAccount1.click();
 
         System.out.println("Page title is: " + driver.getTitle());
 
-		 driver.quit();
+		 //driver.quit();
     }
 }
