@@ -27,6 +27,10 @@ public class automacao {
         WebElement account = driver.findElement(By.id("nav-link-accountList"));
 
         account.click();
+        
+        WebElement createAccount = driver.findElement(By.id("createAccountSubmit"));
+
+        createAccount.click();
 
         System.out.println("Page title is: " + driver.getTitle());
 
